@@ -3,3 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+// variables
+$black:#1A1A1D;
+$grey:#4E4E50;
+$dark-pink:#950740;
+$light-pink:#C3073F;
+.container {
+    background-color: $black;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(100% 0, 100% 39%, 0 91%, 0 36%);
+    ;
+}
