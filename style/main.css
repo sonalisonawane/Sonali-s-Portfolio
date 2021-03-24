@@ -5,13 +5,18 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #000000;
+  color: #f1648e;
+}
+
 .container {
-  background-color: #1A1A1D;
+  background: #f1648e;
   height: 100vh;
   width: 100vw;
   position: absolute;
   z-index: -1;
-  -webkit-clip-path: polygon(100% 0, 100% 39%, 0 91%, 0 36%);
-          clip-path: polygon(100% 0, 100% 39%, 0 91%, 0 36%);
+  -webkit-clip-path: polygon(100% 1%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 1%, 100% 0%, 100% 100%, 0% 100%);
 }
 /*# sourceMappingURL=main.css.map */
