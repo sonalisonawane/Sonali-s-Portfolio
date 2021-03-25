@@ -1,0 +1,35 @@
+@media screen and (min-width: 600px) {
+  .left {
+    position: absolute;
+    -webkit-transform: rotate(-24deg);
+            transform: rotate(-24deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 15rem;
+    left: 4rem;
+    font-size: 4rem;
+  }
+  img {
+    height: 29rem;
+    width: 29rem;
+    position: absolute;
+    right: 51px;
+    top: 140px;
+  }
+  .mid {
+    position: absolute;
+    left: 110px;
+    top: 71px;
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+    font-size: 2.3rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
