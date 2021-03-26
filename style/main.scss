@@ -1,152 +1,147 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-// variables
-$black:#1A1A1D;
-$grey:#4E4E50;
-$cyan:#2CCCC3;
-$yellow:#FACD3D;
-$violet:#5626C4;
-$dark-pink:#950740;
-$light-pink:#f1648e;
-$lighter-pink:#ee7fa0;
-body {
-    background-color: $black;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-.container {
-    // background-color: $black;
-    background: #000000;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    z-index: -1;
-    clip-path: polygon(0 33%, 100% 0%, 100% 1%, 0% 100%);
-}
-
-img {
-    height: 20rem;
-    width: 17rem;
-    position: absolute;
-    right: 10px;
-    bottom: 1px;
-}
-
-.left {
-    position: absolute;
-    transform: rotate( -59deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 15rem;
-    left: 0rem;
-    font-size: 2rem;
-    overflow: hidden;
-    h1.name {
-        color: $light-pink;
-    }
-    // .left::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     // background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0, #0ff);
-    //     // mix-blend-mode: color;
-    //     pointer-events: none;
-    // }
-}
-
-video {
-    object-fit: cover;
-    position: absolute;
-}
-
-h1 span {
-    display: inline-block;
-    animation: animate 1s linear forwards;
-}
-
-h1 span:nth-child(1) {
-    color: $light-pink;
-    opacity: 0;
-    animation-delay: 2s;
-}
-
-h1 span:nth-child(2) {
-    color: $cyan;
-    opacity: 0;
-    animation-delay: 2.5s;
-    text-shadow: 2px 2px 5px $cyan;
-}
-
-h1 span:nth-child(3) {
-    color: $yellow;
-    opacity: 0;
-    animation-delay: 2.75s;
-    text-shadow: 2px 2px 5px $yellow;
-}
-
-h1 span:nth-child(4) {
-    color: $light-pink;
-    opacity: 0;
-    animation-delay: 3s;
-}
-
-h1 span:nth-child(5) {
-    color: $light-pink;
-    opacity: 0;
-    animation-delay: 3.5s;
-}
-
-h1 span:nth-child(6) {
-    opacity: 0;
-    animation-delay: 3.75s;
-}
-
-h1 span:nth-child(7) {
-    opacity: 0;
-    animation-delay: 4s;
-}
-
-h1 span:nth-child(8) {
-    opacity: 0;
-    animation-delay: 4.5s;
-}
-
-h1 span:nth-child(9) {
-    opacity: 0;
-    animation-delay: 4.75s;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotateY(90deg);
-        filter: blur(10px)
-    }
-    100% {
-        opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0)
-    }
-}
-
-a.links {
-    text-decoration: none;
-    margin: 6px;
-    color: $dark-pink;
-}
-
-.mid {
-    position: absolute;
-    left: -20px;
-    top: 85px;
-    transform: rotate( -30deg);
-    font-size: 1.3rem;
-}
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        @font-face {
+            font-family: 'blue_eyes_-_personal_useRg';
+            src: url('../fonts/blue_eyes_-_personal_use-webfont.woff2') format('woff2'), url('../fonts/blue_eyes_-_personal_use-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        // variables
+        $black:#1A1A1D;
+        $grey:#4E4E50;
+        $cyan:#2CCCC3;
+        $yellow:#FACD3D;
+        $violet:#5626C4;
+        $dark-pink:#950740;
+        $light-pink:#f1648e;
+        $lighter-pink:#ee7fa0;
+        body {
+            background-color: $black;
+            font-family: 'blue_eyes_-_personal_useRg';
+        }
+        
+        .container {
+            background: #000000;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            z-index: -1;
+            clip-path: polygon(0 33%, 100% 0%, 100% 1%, 0% 100%);
+        }
+        
+        .right img {
+            height: 20rem;
+            width: 17rem;
+            position: absolute;
+            right: 10px;
+            bottom: 1px;
+        }
+        
+        .left {
+            position: absolute;
+            transform: rotate( -59deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 15rem;
+            left: 0rem;
+            font-size: 2.5rem;
+            overflow: hidden;
+            h1.name {
+                color: $light-pink;
+                font-weight: normal;
+            }
+            video {
+                object-fit: cover;
+                position: absolute;
+            }
+        }
+        
+        h1 span {
+            display: inline-block;
+            animation: animate 3s linear forwards;
+        }
+        
+        h1 span:nth-child(1) {
+            color: $light-pink;
+            opacity: 0;
+            animation-delay: 2s;
+        }
+        
+        h1 span:nth-child(2) {
+            color: $cyan;
+            opacity: 0;
+            animation-delay: 2.5s;
+            text-shadow: 2px 2px 5px $cyan;
+        }
+        
+        h1 span:nth-child(3) {
+            color: $yellow;
+            opacity: 0;
+            animation-delay: 2.75s;
+            text-shadow: 2px 2px 5px $yellow;
+        }
+        
+        h1 span:nth-child(4) {
+            color: $light-pink;
+            opacity: 0;
+            animation-delay: 3s;
+        }
+        
+        h1 span:nth-child(5) {
+            color: $light-pink;
+            opacity: 0;
+            animation-delay: 3.5s;
+        }
+        
+        h1 span:nth-child(6) {
+            opacity: 0;
+            animation-delay: 3.75s;
+        }
+        
+        h1 span:nth-child(7) {
+            opacity: 0;
+            animation-delay: 4s;
+        }
+        
+        h1 span:nth-child(8) {
+            opacity: 0;
+            animation-delay: 4.5s;
+        }
+        
+        h1 span:nth-child(9) {
+            opacity: 0;
+            animation-delay: 4.75s;
+        }
+        
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                transform: rotateY(90deg);
+                filter: blur(10px)
+            }
+            100% {
+                opacity: 1;
+                transform: rotateY(0deg);
+                filter: blur(0)
+            }
+        }
+        
+        a.links {
+            text-decoration: none;
+            margin: 6px;
+            color: $dark-pink;
+        }
+        
+        .mid {
+            position: absolute;
+            left: -20px;
+            top: 85px;
+            transform: rotate( -30deg);
+            font-size: 1.3rem;
+        }

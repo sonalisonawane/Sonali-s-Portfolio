@@ -5,9 +5,16 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'blue_eyes_-_personal_useRg';
+  src: url("../fonts/blue_eyes_-_personal_use-webfont.woff2") format("woff2"), url("../fonts/blue_eyes_-_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #1A1A1D;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'blue_eyes_-_personal_useRg';
 }
 
 .container {
@@ -20,7 +27,7 @@ body {
           clip-path: polygon(0 33%, 100% 0%, 100% 1%, 0% 100%);
 }
 
-img {
+.right img {
   height: 20rem;
   width: 17rem;
   position: absolute;
@@ -43,15 +50,16 @@ img {
           align-items: center;
   top: 15rem;
   left: 0rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   overflow: hidden;
 }
 
 .left h1.name {
   color: #f1648e;
+  font-weight: normal;
 }
 
-video {
+.left video {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -59,8 +67,8 @@ video {
 
 h1 span {
   display: inline-block;
-  -webkit-animation: animate 1s linear forwards;
-          animation: animate 1s linear forwards;
+  -webkit-animation: animate 3s linear forwards;
+          animation: animate 3s linear forwards;
 }
 
 h1 span:nth-child(1) {

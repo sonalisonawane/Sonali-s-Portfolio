@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .left {
     position: absolute;
     -webkit-transform: rotate(-24deg);
@@ -14,9 +14,9 @@
             align-items: center;
     top: 15rem;
     left: 4rem;
-    font-size: 4rem;
+    font-size: 5rem;
   }
-  img {
+  .right img {
     height: 29rem;
     width: 29rem;
     position: absolute;
@@ -30,6 +30,17 @@
     -webkit-transform: rotate(-8deg);
             transform: rotate(-8deg);
     font-size: 2.3rem;
+    text-shadow: 3px 7px 2px black;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .left {
+    -webkit-transform: rotate(-44deg);
+            transform: rotate(-44deg);
+    top: 21rem;
+    left: 4rem;
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
